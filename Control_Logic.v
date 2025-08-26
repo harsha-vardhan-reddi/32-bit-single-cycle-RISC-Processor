@@ -1,12 +1,12 @@
 module control_logic (
-    input  [6:0] opcode,      // Instruction opcode [6:0]
-    output reg   RegWrite,    // Enable writing to the register file
-    output reg   MemWrite,    // Enable writing to data memory
-    output reg   ALUSrc,      // Selects ALU's second operand (register or immediate)
-    output reg   ResultSrc,   // Selects what to write back to a register (ALU result or memory data)
-    output reg   PCSrc,       // Selects the next PC (PC+4 or branch target)
-    output reg [1:0] ALUOp,   // Specifies the operation type for the ALU Control Unit
-    output reg [1:0] ImmSrc   // Selects the immediate format (I, S, B, J)
+    input  [6:0] opcode,      
+    output reg   RegWrite,    
+    output reg   MemWrite,    
+    output reg   ALUSrc,      
+    output reg   ResultSrc,   
+    output reg   PCSrc,       
+    output reg [1:0] ALUOp,   
+    output reg [1:0] ImmSrc   
 );
 
     parameter R_TYPE      = 7'b0110011;
