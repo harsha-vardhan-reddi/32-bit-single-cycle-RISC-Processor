@@ -11,7 +11,7 @@ module instruction_mem (
         ram[2] = 32'h002081B3; // add x3, x1, x2
         ram[3] = 32'h00302023; // sw x3, 0(x0)
         ram[4] = 32'h00002203; // lw x4, 0(x0)
-        ram[5] = 32'h00108463; // beq x1, x1, 8 (offset is 8 bytes -> 2 instructions)
+        ram[5] = 32'h00108463; 
         ram[6] = 32'h0000006F; // jal x0, 0
         ram[7] = 32'h401102B3; // sub x5, x2, x1
         
