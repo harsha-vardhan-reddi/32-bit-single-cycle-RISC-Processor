@@ -8,9 +8,7 @@ module ALU_Control_unit (
     parameter ALU_SUB  = 3'b001;
     parameter ALU_AND  = 3'b010;
     parameter ALU_OR   = 3'b011;
-    parameter ALU_SLT  = 3'b100;
     parameter F3_ADD_SUB = 3'b000;
-    parameter F3_SLT   = 3'b010;
     parameter F3_OR    = 3'b110;
     parameter F3_AND   = 3'b111;
 
@@ -28,8 +26,6 @@ module ALU_Control_unit (
                         else
                             ALUControl = ALU_ADD; 
                     end
-                    F3_SLT:
-                        ALUControl = ALU_SLT;
                     F3_OR:
                         ALUControl = ALU_OR;
                     F3_AND:
